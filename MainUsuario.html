@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Mobike</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img class="img-fluid" id="logo" src="img/I.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarPrincipal">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contáctanos</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#GestionarCuenta">Gestionar cuenta</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#ConsultarServicios">Consultar servicios</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#GestionarArriendo">Gestionar arriendo</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#GestionarSuscripción">Gestionar suscripción</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#EnviarReporte">Enviar reportes</a>
+                    </li>
+                </ul>
+                <button class="btn btn-danger float-right" type="button" id="boton" value="Enviar" name="btnSalir">Salir</button>
+            </div>
+        </nav>
+    </header>
+
+    <br>
+    <main>
+        <div class="container">
+            <hr>
+            <h2 class="text-center" id="GestionarCuenta">Gestionar cuenta</h2>
+            <hr>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnConsultarArriendo" OnClick="location.href='HistorialArriendo.html' ">Consultar historial de arriendo</button>
+            <br>
+            <br>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnConsultarSaldo" OnClick="location.href='Saldo.html' ">Consultar saldo</button>
+            <br>
+            <br>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnRecargar" OnClick="location.href='Recargar.html' ">Recargar saldo</button>
+        </div>
+        <div class="container">
+            <hr>
+            <h2 class="text-center" id="ConsultarServicios">Consultar servicios</h2>
+            <hr>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnBiciDisponibles" OnClick="location.href='' ">Consultar bicicletas disponibles</button>
+            <br>
+            <br>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnZonasEstacionamiento" OnClick="location.href='' ">Consultar zonas de estacionamiento</button>
+            <br>
+            <br>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnZonasTrafico" OnClick="location.href='' ">Consultar zonas de trafico</button>
+        </div>
+        <div class="container">
+            <hr>
+            <h2 class="text-center" id="GestionarArriendo">Gestionar arriendo</h2>
+            <hr>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnSimularViaje" OnClick="location.href='' ">Simular costo de viaje</button>
+            <br>
+            <br>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnHabilitarBici" OnClick="location.href='' ">Habilitar bicicleta</button>
+        </div>
+        <div class="container">
+            <hr>
+            <h2 class="text-center" id="GestionarSuscripción">Gestionar suscripción</h2>
+            <hr>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnIniciarSuscripción" OnClick="location.href='' ">Iniciar suscripción</button>
+            <br>
+            <br>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnRenovarSuscripción" OnClick="location.href='' ">Renovar suscripción</button>
+            <br>
+            <br>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnEstadoSuscripción" OnClick="location.href='' ">Consultar estado de suscripción</button>
+            <br>
+            <br>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnTerminarSuscripción" OnClick="location.href='' ">Terminar suscripción</button>
+        </div>
+        <div class="container">
+            <hr>
+            <h2 class="text-center" id="EnviarReporte">Enviar reportes</h2>
+            <hr>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnReportarRobo" OnClick="location.href='' ">Reportar robo bicicleta</button>
+            <br>
+            <br>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnReportarAccidente" OnClick="location.href='' ">Reportar accidente</button>
+            <br>
+            <br>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnReportarFallaBici" OnClick="location.href='' ">Reportar falla de bicicleta</button>
+        </div>
+        <br>
+    </main>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-12 col-md text-center">
+                <img class="mb-2" src="img/I.png" alt="logo bici" width="30" height="30">
+                <small class="d-block mb-3">© 2019-2020</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Secciones</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+
+            </div>
+            <div class="col-6 col-md">
+                <h5>Redes</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.Instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.Twitter.com/">Twitter</a></li>
+                    <li>
+                        <a href="https://www.facebook.com/"><img src="img/fb.png" alt="facebook"></a>
+                        <a href="https://www.Instagram.com/"><img src="img/insta.png" alt="Instagram"></a>
+                        <a href="https://www.Twitter.com/"><img src="img/tw.png" alt="Twitter"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Ubicacion</h5>
+                <ul class="list-unstyled text-small">
+                    <li><span>Serrano 96, Santiago</span></li>
+                    <li><span>WhatsApp:+56912341234</span></li>
+                    <li><span>bicicleta@mobike.cl</span></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>

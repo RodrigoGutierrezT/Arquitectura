@@ -1,0 +1,30 @@
+nav {
+    background-color: rgb(24, 126, 209);
+}
+
+#logo {
+    width: 40px;
+    height: auto;
+}
+
+#mielHome {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: rgb(24, 126, 209);
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+.errors {
+    color: red;
+}
+
+p {
+    font-size: 18px;
+}
