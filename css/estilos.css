@@ -28,3 +28,16 @@ a {
 p {
     font-size: 18px;
 }
+
+.saldo {
+    background-color: rgb(24, 126, 209);
+    color: white;
+}
+
+.cargo {
+    color: red;
+}
+
+.abono {
+    color: green;
+}
