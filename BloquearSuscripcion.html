@@ -35,6 +35,44 @@
         </nav>
     </header>
 
+    <main>
+        <div class="container">
+            <div class="container">
+                <hr>
+                <h2 class="text-center" id="GestionarBicicletas">Bloquear Suscripción</h2>
+                <hr>
+            <div class="container">
+            <div class="row ">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <form id="id_formulario" action="#" method="POST">
+
+                        <div class="item-formulario form-group">
+                        </label>
+                            <input class="input form-control" type="text" name="id_txtRut" value="" required="" placeholder="Ingrese RUT del cliente" id="id_txtRut" />
+                        </div>
+        <div class="container">
+                <button class="form-control btn btn-primary" type="button" data-toggle="collapse" data-target="#ListaClientes" aria-expanded="false" onclick="Buscar">Buscar</button>
+        </div>
+        <br>
+        <div class="container">
+        <form>
+        <div class="collapse" id="ListaClientes">
+            <label for="exampleFormControlSelect2">Seleccione Cliente</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>17.289.408-7    Claudia Fernández</option>
+            <option>20.265.255-5    Gabriel Pérez</option>
+            <option>19.655.441-2    Catalina Oyazún</option>
+            <option>14.254.657-k    Victor Saavedra</option>
+            </select>
+            <button class="form-control btn btn-primary" type="button" id="boton" value="Enviar" name="btnBloquearSuscripcion" OnClick="location.href='BloquearSuscripcion.html' ">Bloquear suscripción</button>
+        </div>
+        <div class="container">
+        </form>
+            <br>
+            <br>
+    </main>
+
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
             <div class="col-12 col-md text-center">
