@@ -59,3 +59,33 @@ function isNumberKey(evt) {
         return false;
     return true;
 };
+
+ function checktarjeta(tarjeta) {
+    
+        var valor = tarjeta.value.replace('.', '').trim();
+        
+        valor = valor
+    
+        .replace(/\s/g, '')
+	// Eliminar las letras
+	.replace(/\D/g, '')
+	// Ponemos espacio cada cuatro numeros
+	.replace(/([0-9]{4})/g, '$1 ')
+	// Elimina el ultimo espaciado
+	.trim();
+        cuerpo = valor.slice(0, -1);
+        dv = valor.slice(-1).toUpperCase();
+    
+        
+        tarjeta.value =(cuerpo  + dv).trim();
+    
+        
+        if (cuerpo.length < 16) {
+            tarjeta.setCustomValidity("N°Tarjeta Incompleto");
+            return false;
+        }
+    
+        
+        
+        tarjeta.setCustomValidity('');
+    }
